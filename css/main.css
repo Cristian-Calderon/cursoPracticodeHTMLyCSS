@@ -4,6 +4,12 @@ body{
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
 }
+a{
+    /* Para quitarle la linea de abajo al ancla "a"*/
+    text-decoration: none;
+    /*Para arrastrar encima el mouse y cambie a una mano*/
+    cursor:pointer;
+}
 
 header{
     width: 100%;
@@ -14,4 +20,22 @@ header nav{
     display: flex;
     /* justify-content sirve para que los (elementos) "ul" y "li" se vayan al final de fila. */
     justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    /* height esta auto porque ya declaramos en "header" su size entonces le pones auto y tomara el de su padre*/
+    height: auto;
+    /* flex para que el contenido que tenemos que ponga de manera horizontal*/
+    display: flex;
+    /* Para quitarle los puntos que tiene los li*/
+    list-style: none;
+    /* Para centrar el contenido*/
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-right-section a{
+    margin-right: 10px;
+    color: #000000;
 }
